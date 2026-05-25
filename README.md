@@ -34,16 +34,6 @@ publicités YouTube, applique l'astuce du point (`youtube.com` →
 - **Firefox** : `about:debugging#/runtime/this-firefox` → Charger un
   module temporaire → `manifest.json`.
 
-## Installation permanente
-
-- **Chrome** : une extension non empaquetée reste installée entre les
-  redémarrages. Pour supprimer le mode développeur, publier en *Non
-  répertorié* sur le Chrome Web Store.
-- **Firefox** : faire signer le `.xpi` sur addons.mozilla.org en *Non
-  répertorié* (gratuit), puis l'installer via `about:addons` → Installer
-  un module depuis un fichier. Ou Firefox Developer Edition avec
-  `xpinstall.signatures.required` = `false`.
-
 ## Notes
 
 - Permission unique : `storage`. Aucune donnée envoyée à l'extérieur

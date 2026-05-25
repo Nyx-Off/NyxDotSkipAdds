@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="popup.css" />
+  <title>NyxDotSkipAdds</title>
+</head>
+<body>
+  <div class="glow-bg"></div>
+
+  <header class="head">
+    <div class="logo-wrap">
+      <img class="logo-img" src="icons/icon128.png" alt="N" />
+    </div>
+    <div class="head-text">
+      <h1>Nyx<span class="accent">DotSkip</span>Adds</h1>
+      <p>Anti-pub YouTube · v2.1</p>
+    </div>
+  </header>
+
+  <main>
+    <div class="row toggle-row">
+      <div class="row-label">
+        <span class="row-title">Protection</span>
+        <span id="status" class="status on">Activé</span>
+      </div>
+      <label class="switch">
+        <input type="checkbox" id="toggle" />
+        <span class="slider"></span>
+      </label>
+    </div>
+
+    <div class="stat">
+      <span class="stat-num" id="count">0</span>
+      <span class="stat-label">pubs esquivées</span>
+      <button id="reset" class="reset" title="Remettre à zéro">reset</button>
+    </div>
+
+    <div class="info">
+      <p>Une pub démarre → le timestamp est mémorisé, un <code>.</code> est
+      ajouté à l'URL pour recharger la page, puis la vidéo reprend
+      <strong>et se relance automatiquement</strong> au bon moment.</p>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <span class="foot-dot"></span>
+    <span>Nyx Engine · Chrome &amp; Firefox</span>
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
